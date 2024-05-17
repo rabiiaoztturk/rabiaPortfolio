@@ -1,0 +1,93 @@
+@media (width <= 800px) {
+    :root {
+        font-size: 8px;
+    }
+
+    header {
+        width: 90%;
+        margin: 20px auto 40px;
+    }
+
+    .heading {
+        width: 80%;
+    }
+
+    .topics {
+        width: 90%;
+        height: 570px;
+        grid-template-areas:
+            "graphic graphic ui apps"
+            "graphic graphic illustrations illustrations"
+            "photography photography motion motion"
+        ;
+    }
+
+    .content {
+        width: 100%;
+    }
+    .contentImg {
+        position: relative;
+        top: 0;
+        left: -45px;
+        width: 364px;
+    }
+
+    .interview {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        padding: 56px 75px 64px;
+    }
+
+    .interviewDescription {
+        margin-bottom: 23px;
+    }
+    footer {
+        width: 90%;
+        margin: 56px auto;
+    }
+}
+
+@media (width <= 500px) {
+    :root {
+        font-size: 6.5px;
+    }
+
+    .heading p {
+        font-size: 2.4rem;
+    }
+
+    .topics {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto 80px;
+        display: grid;
+        grid-template-areas:
+            "graphic graphic"
+            " ui apps"
+            "illustrations illustrations"
+            "photography photography"
+            "motion motion"
+        ;
+    }
+
+    .content {
+        width: 90%;
+        flex-direction: column;
+        margin: 100px auto;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .contentImg {
+        width: 300px;
+        top: 0;
+        left: 0;
+    }
+
+    .interview {
+        width: 90%;
+        padding: 48px 24px;
+    }
+
+}
